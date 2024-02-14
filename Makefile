@@ -1,7 +1,7 @@
 FLAGS = -std=c++11
 
 ifdef USE_FLOAT
-    FLAGS += -DUSE_FLOAT
+    FLAGS += -D USE_FLOAT
 endif
 
 all: main.cpp
@@ -10,5 +10,5 @@ all: main.cpp
 clean:
 	rm -f task1
 
-# Float: make USE_FLOAT=1 && ./test && make clean
-# Double: make && ./test && make clean
+# Float: make USE_FLOAT=1 && ./task1 && make clean
+# Double: make && ./task1 && make clean
